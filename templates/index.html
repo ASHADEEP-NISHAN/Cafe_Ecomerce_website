@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Grand Coffee</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="static/css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="static/css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="static/images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="static/css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- owl stylesheets --> 
+      <link rel="stylesheet" href="static/css/owl.carousel.min.css">
+      <link rel="stylesheet" href="static/css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+   </head>
+   <body>
+      <!--header section start -->
+      <div class="header_section">
+         <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+               <div class="logo"><a href="index.html"><img src="static/images/logo.png"></a></div>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item active">
+                        <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('about') }}">About Us</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('gallery') }}">Gallery</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('services') }}">Services</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('contact') }}">Contact Us</a>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+      </div>
+      <!--header section end -->
+      <!-- banner section start -->
+      <div class="banner_section layout_padding">
+         <div class="container">
+            <div id="main_slider" class="carousel slide" data-ride="carousel">
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="row">
+                        <div class="col-sm-12">
+                           <div class="banner_taital">
+                              <h1 class="outstanding_text">Delightful</h1>
+                              <h1 class="coffee_text">Coffee Shop</h1>
+                              <p class="there_text">"Wake up and smell the coffee! ☕ At GrandCoffee, we bring you the finest beans, freshly roasted for the perfect brew. Explore our collection of premium blends, single-origin favorites, and coffee essentials to elevate your mornings, one sip at a time. Start your journey to coffee bliss today!" </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="row">
+                        <div class="col-sm-12">
+                           <div class="banner_taital">
+                              <h1 class="outstanding_text">Brewed to</h1>
+                              <h1 class="coffee_text">Perfection</h1>
+                              <p class="there_text">Discover the art of coffee at its finest. From handpicked beans to expertly crafted blends, every sip tells a story of passion and flavor. Experience the perfect start to your day with our exceptional brews. </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="row">
+                        <div class="col-sm-12">
+                           <div class="banner_taital">
+                              <h1 class="outstanding_text">Step Into</h1>
+                              <h1 class="coffee_text">Coffee Bliss</h1>
+                              <p class="there_text">Indulge in the rich aroma and bold flavors of expertly brewed coffee. Whether you're here for a quick pick-me-up or a leisurely sip, we bring passion and perfection to every cup. Your coffee journey starts here! </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+               <i class="fa fa-angle-left"></i>
+               </a>
+               <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+               <i class="fa fa-angle-right"></i>
+               </a>
+            </div>
+         </div>
+      </div>
+      <!-- banner section end -->
+      <!-- about section start -->
+      <div class="about_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="about_taital_main">
+                     <div class="about_taital">About Us</div>
+                     <p class="about_text">Welcome to GrandCoffee, where every cup tells a story! We’re more than just a coffee shop – we’re a community of coffee enthusiasts dedicated to bringing you the finest brews. From sourcing premium, ethically grown beans to crafting each cup with love and precision, our mission is to create an experience that feels like home.  
+                        
+                        Whether you’re here for a quick caffeine fix, a cozy corner to unwind, or a space to connect with friends, we’ve got you covered. At GrandCoffee, every sip is a celebration of flavor, warmth, and quality. Come join us and make your coffee moments unforgettable!</p>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="about_img"><img src="static/images/about-img.png"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- about section end -->
+      <!-- gallery section start -->
+      <div class="gallery_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <h1 class="gallery_taital">Sip, Savor, and See the Moments</h1>
+                  <p class="gallery_text">Explore our gallery to catch a glimpse of the cozy ambiance, freshly brewed delights, and cherished memories shared at GrandCoffee. Every picture tells a story of flavor, warmth, and community. Take a look and let the aroma come to life!</p>
+               </div>
+            </div>
+            <div class="">
+               <div class="gallery_section_2">
+                  <div class="row">
+                     <div class="col-md-4">
+                        <div class="container_main">
+                           <img src="static/images/img-1.png" alt="Avatar" class="image">
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="container_main">
+                           <img src="static/images/img-2.png" alt="Avatar" class="image">
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="container_main">
+                           <img src="static/images/img-3.png" alt="Avatar" class="image">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="gallery_section_2">
+                  <div class="row">
+                     <div class="col-md-4">
+                        <div class="container_main">
+                           <img src="static/images/img-4.png" alt="Avatar" class="image">
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="container_main">
+                           <img src="static/images/img-5.png" alt="Avatar" class="image">
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="container_main">
+                           <img src="static/images/img-6.png" alt="Avatar" class="image">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="gallery_section_2">
+                  <div class="row">
+                     <div class="col-md-4">
+                        <div class="container_main">
+                           <img src="static/images/img-7.png" alt="Avatar" class="image">
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="container_main">
+                           <img src="static/images/img-8.png" alt="Avatar" class="image">
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="container_main">
+                           <img src="static/images/img-9.png" alt="Avatar" class="image">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="seemore_bt"><a href="{{ url_for('gallery') }}">See More</a></div>
+         </div>
+      </div>
+      <!-- gallery section end -->
+      <!-- services section start -->
+      <div class="services_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <h1 class="services_taital">Our Services</h1>
+                  <p class="services_text">Discover the unique coffee experiences we bring to your table!</p>
+               </div>
+            </div>
+            <div class="services_section_2">
+               <div class="row">
+                  <div class="col-lg-4 col-sm-12 col-md-4">
+                     <div class="box_main active">
+                        <div class="house_icon">
+                           <img src="static/images/icon1.png" class="image_1">
+                           <img src="static/images/icon1.png" class="image_2">
+                        </div>
+                        <h3 class="decorate_text">Authentic Coffee Blends</h3>
+                        <p class="tation_text">Savor the rich aroma and flavor of our freshly brewed, original coffee blends crafted to perfection</p>
+                        <div class="readmore_bt"><a href="{{ url_for('menu') }}">Our Menu</a></div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-12 col-md-4">
+                     <div class="box_main">
+                        <div class="house_icon">
+                           <img src="static/images/icon2.png" class="image_1">
+                           <img src="static/images/icon2.png" class="image_2">
+                        </div>
+                        <h3 class="decorate_text">Variety of Flavors</h3>
+                        <p class="tation_text">Explore a delightful selection of 20 unique coffee flavors, catering to every taste and preference</p>
+                        <div class="readmore_bt"><a href="{{ url_for('menu') }}">Our Menu</a></div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-12 col-md-4">
+                     <div class="box_main">
+                        <div class="house_icon">
+                           <img src="static/images/icon3.png" class="image_1">
+                           <img src="static/images/icon3.png" class="image_2">
+                        </div>
+                        <h3 class="decorate_text">Relaxing Atmosphere</h3>
+                        <p class="tation_text">Enjoy your coffee in a warm, inviting ambiance designed to make your moments special</p>
+<!--                        <div class="readmore_bt"><a href="#">Read More</a></div>-->
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- services section end -->
+      <!-- testimonial section start -->
+      <div class="client_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <h1 class="client_taital">What Our Customers Say</h1>
+                  <p class="client_text">Real stories from our customers about their coffee experience</p>
+               </div>
+            </div>
+         </div>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="client_section_2">
+                <div class="container">
+                   <div class="row">
+                      <div class="col-md-12">
+                         <div class="testimonial_section_2">
+                            <h4 class="client_name_text">Nishan <span class="quick_icon"><img src="static/images/quick-icon.png"></span></h4>
+                            <p class="customer_text">The coffee here is simply outstanding! From the rich aroma to the delightful taste, every cup feels like a little piece of heaven. The ambiance and friendly service make this my favorite spot to relax and unwind.</p>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="client_section_2">
+                <div class="container">
+                   <div class="row">
+                      <div class="col-md-12">
+                         <div class="testimonial_section_2">
+                            <h4 class="client_name_text">Mrutyunjaya <span class="quick_icon"><img src="static/images/quick-icon.png"></span></h4>
+                            <p class="customer_text">I’ve tried coffee from many places, but nothing matches the quality and variety here. Whether I’m in the mood for a classic blend or something adventurous, they always deliver perfection!</p>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="client_section_2">
+                <div class="container">
+                   <div class="row">
+                      <div class="col-md-12">
+                         <div class="testimonial_section_2">
+                            <h4 class="client_name_text">Sophie <span class="quick_icon"><img src="static/images/quick-icon.png"></span></h4>
+                            <p class="customer_text">This place has become my go-to coffee spot. The relaxing ambiance, courteous staff, and exceptional coffee make every visit memorable. Highly recommend it to all coffee lovers!</p>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+      <!-- testimonial section end -->
+      <!-- contact section start -->
+      <div class="contact_section layout_padding">
+         <div class="container">
+            <h1 class="contact_text">Contact Us</h1>
+         </div>
+      </div>
+      <div class="contact_section_2 layout_padding">
+         <div class="container-fluid">
+            <div class="row">
+               <!-- Form Section -->
+               <div class="col-md-6 padding_0">
+                  <div class="mail_section">
+                     <form action="{{ url_for('contact') }}" method="POST">
+                        <div class="email_text">
+                           <div class="form-group">
+                              <input type="text" class="email-bt" placeholder="Name" name="Name" required>
+                           </div>
+                           <div class="form-group">
+                              <input type="email" class="email-bt" placeholder="Email" name="Email" required>
+                           </div>
+                           <div class="form-group">
+                              <input type="text" class="email-bt" placeholder="Phone Number" name="Phone">
+                           </div>
+                           <div class="form-group">
+                              <textarea class="massage-bt" placeholder="Message" rows="5" id="comment" name="Message" required></textarea>
+                           </div>
+                           <div class="send_btn">
+                              <button type="submit" class="main_bt">SEND</button>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+               <div class="col-md-6 padding_0">
+                  <div class="map-responsive">
+                     <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=85.26255637407306%2C20.93428615725732%2C85.26506692171098%2C20.93609236573922&amp;layer=mapnik&amp;marker=20.93518926422115%2C85.263811647892" width="750" height="508" frameborder="0" style="border:0; width: 100%;" allowfullscreen></iframe>
+                     <!-- <iframe width="750" height="508" src="https://www.openstreetmap.org/export/embed.html?bbox=85.26255637407306%2C20.93428615725732%2C85.26506692171098%2C20.93609236573922&amp;layer=mapnik&amp;marker=20.93518926422115%2C85.263811647892" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=20.935189&amp;mlon=85.263812#map=19/20.935189/85.263812">View Larger Map</a></small> -->
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- contact section end -->
+      <!-- footer section start -->
+      <div class="footer_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-3 col-sm-6">
+                  <h3 class="useful_text">About</h3>
+                  <p class="footer_text">Welcome to GrandCoffee, where we deliver exceptional services tailored to your needs. Explore our website to learn more about what we offer and how we can assist you</p>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <h3 class="useful_text">Pages</h3>
+                  <div class="footer_menu">
+                     <ul>
+                        <li><a href="{{ url_for('home') }}">Home</a></li>
+                        <li><a href="{{ url_for('about') }}">About Us</a></li>
+                        <li><a href="{{ url_for('gallery') }}">Gallery</a></li>
+                        <li><a href="{{ url_for('services') }}">Services</a></li>
+                        <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <h1 class="useful_text">Useful Link</h1>
+                  <div class="dummy_text">
+                     <ul>
+                        <li><a href="{{ url_for('menu') }}">Our Menu</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Blog</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <h1 class="useful_text">Contact Us</h1>
+                  <div class="location_text">
+                     <ul>
+                        <li>
+                           <a href="#">
+                           <i class="fa fa-map-marker" aria-hidden="true"></i><span class="padding_left_10">Address : IGIT Sarang Street</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                           <i class="fa fa-phone" aria-hidden="true"></i><span class="padding_left_10">Call : +91 7978732790</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                           <i class="fa fa-envelope" aria-hidden="true"></i><span class="padding_left_10">Email : mrutyunjayabapun@gmail.com</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- footer section end -->
+      <!-- copyright section start -->
+      <div class="copyright_section">
+         <div class="container">
+            <p class="copyright_text">2025 All Rights Reserved. Design by <a href=" https://ashadeepsahoo.my.canva.site/ashadeep-sahoo">Nishan</a></p>
+         </div>
+      </div>
+      <!-- copyright section end -->
+      <!-- Javascript files-->
+      <script src="static/js/jquery.min.js"></script>
+      <script src="static/js/popper.min.js"></script>
+      <script src="static/js/bootstrap.bundle.min.js"></script>
+      <script src="static/js/jquery-3.0.0.min.js"></script>
+      <script src="static/js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="static/js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="static/js/custom.js"></script>
+   </body>
+</html>
